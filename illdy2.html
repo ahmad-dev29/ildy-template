@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illdy theme</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #header {
+            width: 100%;
+            height: 168vh;
+            /* border: 2px solid green; */
+            background-image: url(./images/front-page-header.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #navbar {
+
+            height: 100px;
+            /* border: 1px solid black; */
+
+
+
+        }
+
+        #logo {
+            margin-top: 18px;
+            margin-left: 60px;
+            /* border: 1px solid black; */
+            width: 180px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #nav {
+            width: 800px;
+            height: 100px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 214px;
+        }
+
+        #nav ul {
+            list-style-type: none;
+        }
+
+        #nav ul li {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            padding-left: 30px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        #heading {
+            height: 300px;
+            /* border: 1px solid black; */
+            margin-top: 120px;
+            padding-top: 10px;
+        }
+
+        #heading1 {
+            margin-top: 120px;
+            margin-left: 150px;
+            font-size: 90px;
+            color: white;
+        }
+
+        #head2 {
+            text-align: center;
+            width: 800px;
+            /* border: 1px solid black;  */
+            margin-left: 250px;
+            color: white;
+        }
+
+        #button {
+            width: 240px;
+            height: 60px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 375px;
+            margin-top: 85px;
+            font-size: medium;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.021);
+            border: 2px white solid;
+            color: white;
+        }
+
+        #button:hover {
+            background-color: rgba(0, 0, 0, 0.128);
+        }
+
+        #button2 {
+            width: 240px;
+            height: 60px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            margin-top: 85px;
+            background-color: rgba(255, 255, 0, 0.888);
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        #button2:hover {
+            background-color: rgb(90, 51, 127);
+
+
+        }
+
+        #span-1 {
+            color: rgb(241, 210, 4);
+        }
+
+        #head3 {
+            font-size: 40px;
+            font-weight: bolder;
+            /* border: 1px solid black; */
+            width: 130px;
+            height: 40px;
+            margin-top: 80px;
+            margin-left: 560px;
+        }
+
+        #head4 {
+            /* border: 1px solid black; */
+            width: 900px;
+            height: 50px;
+            text-align: center;
+            margin-left: 190px;
+            margin-top: 20px;
+        }
+
+        #three-box {
+            width: 90%;
+            height: 200px;
+            /* border: 2px solid red; */
+            /* margin:100px auto ; */
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #tomato-box {
+            width: 31%;
+            height: 50%;
+            /* border: 2px solid tomato;   */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #box-60 {
+            width: 60px;
+            height: 25px;
+            background-color: tomato;
+            border-radius: 3px;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 60%;
+
+        }
+
+        #clip_path {
+            width: 10px;
+            height: 10px;
+            background-color: tomato;
+            clip-path: polygon(100% 0, 0 0, 53% 69%);
+            margin-left: 66%;
+            margin-top: 1px;
+        }
+
+        #Silver_line {
+            width: 100%;
+            margin-top: 5px;
+            border-bottom: 3px solid silver;
+        }
+
+        #tomato_line {
+            width: 65%;
+            border-bottom: 3px solid tomato;
+            margin-top: -3px;
+        }
+
+        #tomato_dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: tomato;
+            margin-left: 65%;
+            margin-top: -5px;
+        }
+
+        #a-icon {
+            color: tomato;
+            /* font-size: 30px; */
+            margin-top: 20px;
+        }
+
+        #banana-box {
+            width: 31%;
+            height: 50%;
+            /* border: 2px solid rgba(255, 0, 255, 0.644); */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #box-80 {
+            width: 60px;
+            height: 25px;
+            background-color: rgba(255, 0, 255, 0.644);
+            border-radius: 3px;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 60%;
+        }
+
+        #clip_path2 {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 0, 255, 0.644);
+            clip-path: polygon(100% 0, 0 0, 53% 69%);
+            margin-left: 66%;
+            margin-top: 1px;
+        }
+
+        #Silver_line2 {
+            width: 100%;
+            margin-top: 5px;
+            border-bottom: 3px solid silver;
+        }
+
+        #banana-line2 {
+            width: 67%;
+            border-bottom: 3px solid rgba(255, 0, 255, 0.644);
+            margin-top: -3px;
+        }
+
+        #banana_dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 255, 0.644);
+            margin-left: 66%;
+            margin-top: -5px;
+        }
+
+        #b-icon {
+            color: rgba(255, 0, 255, 0.644);
+            /* font-size: 30px; */
+            margin-top: 20px;
+        }
+
+        #apple-box {
+            width: 31%;
+            height: 50%;
+            /* border: 2px solid maroon; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #box-90 {
+            width: 60px;
+            height: 25px;
+            background-color: maroon;
+            border-radius: 3px;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 60%;
+        }
+
+        #clip_path3 {
+            width: 10px;
+            height: 10px;
+            background-color: maroon;
+            clip-path: polygon(100% 0, 0 0, 53% 69%);
+            margin-left: 66%;
+            margin-top: 1px;
+        }
+
+        #Silver_line3 {
+            width: 100%;
+            margin-top: 5px;
+            border-bottom: 3px solid silver;
+        }
+
+        #apple-line {
+            width: 67%;
+            border-bottom: 3px solid maroon;
+            margin-top: -3px;
+        }
+
+        #apple_dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: maroon;
+            margin-left: 66%;
+            margin-top: -5px;
+        }
+
+        #c-icon {
+            color: maroon;
+            /* font-size: 30px; */
+            margin-top: 20px;
+        }
+
+        #bakgrontex {
+            width: 1260px;
+            height: 200px;
+            background-color: darkgrey;
+            padding-top: 1px;
+        }
+
+        #baktex {
+            width: 300px;
+            height: 170px;
+            /* border: 2px solid black; */
+            margin-top: 10px;
+            margin-left: 490px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #baktex h4 {
+            color: black;
+        }
+
+        #photos {
+            width: 1260px;
+            height: 300px;
+            /* border: 1px solid black; */
+
+        }
+
+        #picc {
+            width: 340px;
+            height: 300px;
+            margin-left: -10px;
+        }
+
+        #pic2 {
+            width: 315px;
+            height: 300px;
+            margin-left: -10px;
+
+
+        }
+
+        #pic3 {
+            width: 315px;
+            height: 300px;
+            margin-left: -10px;
+        }
+
+        #pic4 {
+            width: 337px;
+            height: 300px;
+            margin-left: -30px;
+        }
+
+        #picc:hover {
+            opacity: 0.5;
+        }
+
+        #pic2:hover {
+            opacity: 0.5;
+        }
+
+        #pic3:hover {
+            opacity: 0.5;
+        }
+
+        #pic4:hover {
+            opacity: 0.5;
+        }
+
+        #sliderp {
+            width: 1260ox;
+            height: 680px;
+            border: 1px solid black;
+            padding-top: 1px;
+            background-image: url(./images/purple-beautiful-themed-particle-form-futuristic-neon-graphic-background-science-energy-3d-abstract-art-element-illustration-technology-artificial-intelligence-shape-theme-wallpaper-free-photo.jpg);
+
+        }
+
+        #textt {
+            width: 190px;
+            height: 40px;
+            /* border: 1px solid black; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 600px;
+            margin-top: 60px;
+            font-size: larger;
+            color: rgb(255, 255, 255);
+        }
+
+        #pi1 {
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            border-radius: 150px;
+            margin-left: 660px;
+            margin-top: 60px;
+        }
+
+        #pera {
+            width: 990px;
+            height: 150px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 60px;
+            background-color: rgba(72, 18, 72, 0.961);
+            padding-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        #clip-path0 {
+            width: 50px;
+            height: 30px;
+            background-color: maroon;
+            clip-path: polygon(100% 0, 0 0, 53% 69%);
+            margin-left: 690px;
+        }
+
+        #tx {
+            width: 180px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-left: 655px;
+            margin-top: 50px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        #servis {
+            width: 1260px;
+            height: 200px;
+            /* border: 1px solid black; */
+            padding-top: 1px;
+        }
+
+        #sevis {
+            width: 250px;
+            height: 80px;
+            /* border: 1px solid black; */
+            margin-left: 490px;
+            margin-top: 80px;
+            color: rgb(75, 84, 84);
+            padding-left: 90px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        #qq {
+            width: 780px;
+            height: 50px;
+            /* border: 1px solid black;  */
+            margin-left: 280px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            margin-top: -20px;
+            color: rgb(186, 186, 164);
+        }
+
+        #tbox {
+            width: 1260px;
+            height: 300px;
+            /* border: 1px solid black; */
+            padding: 1px;
+        }
+
+        #p1 {
+            width: 430px;
+            height: 300px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #pen {
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid black; */
+            font-size: 40px;
+            margin-top: 30px;
+            margin-left: 200px;
+            color: rgb(201, 119, 53);
+        }
+
+        #pentx {
+            width: 180px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-left: 160px;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(201, 119, 53);
+            font-weight: 700;
+        }
+
+        #penp {
+            width: 370px;
+            height: 100px;
+            /* border: 1px solid black; */
+            margin-left: 60px;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(117, 123, 123);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+
+
+        #p2 {
+            width: 400px;
+            height: 300px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #dev {
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid black; */
+            font-size: 40px;
+            margin-top: 30px;
+            margin-left: 180px;
+            color: rgb(201, 119, 53);
+
+            /* display: inline-block;
+            vertical-align: top;  */
+        }
+
+        #devtx {
+            width: 180px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-left: 130px;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(201, 119, 53);
+            font-weight: 700;
+            /* display: inline-block;
+            vertical-align: top;  */
+
+        }
+
+        #devp {
+            width: 370px;
+            height: 100px;
+            /* border: 1px solid black; */
+            margin-left: 30px;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(117, 123, 123);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* display: inline-block;
+            vertical-align: top;  */
+        }
+
+        #p3 {
+            width: 370px;
+            height: 300px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #mag {
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid black; */
+            font-size: 40px;
+            margin-top: 30px;
+            margin-left: 150px;
+            color: rgb(201, 119, 53);
+        }
+
+        #magx {
+            width: 180px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin-left: 100px;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(201, 119, 53);
+            font-weight: 700;
+
+        }
+
+        #magp {
+            width: 370px;
+            height: 100px;
+            /* border: 1px solid black; */
+            margin-left: 40px;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(117, 123, 123);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+
+        #bluebak {
+            width: 1260px;
+            height: 1000px;
+            background-color: rgb(34, 47, 54);
+            padding-top: 1px;
+        }
+
+        #hed {
+            width: 290px;
+            height: 50px;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            margin-top: 70px;
+            margin-left: 500px;
+        }
+
+        #line {
+            width: 830px;
+            height: 40px;
+            /* border: 1px solid black; */
+            text-align: center;
+            margin-left: 250px;
+            margin-top: 20px;
+            color: rgb(135, 145, 147);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        #btn {
+            width: 170px;
+            height: 40px;
+            color: white;
+            background-color: rgb(241, 210, 4);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            border-radius: 3px;
+            border: none;
+            margin-left: 555px;
+            margin-top: 40px;
+            font-weight: 900;
+        }
+
+        #blogs {
+            width: 1260px;
+            height: 740px;
+            /* border: 2px solid rgb(243, 24, 24); */
+            padding-top: 20px;
+        }
+
+        #ox {
+            width: 350px;
+            height: 680px;
+            /* border: 2px solid rgb(133, 12, 225); */
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #pi {
+            width: 345px;
+
+        }
+
+        #pitx {
+            width: 345px;
+            height: 450px;
+            padding-left: 40px;
+            padding-right: 20px;
+             
+            padding-top: 20px;
+            background-color: white;
+        }
+
+        #pitx p{
+            margin-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(161,169,170);
+        }
+        #pitx h3{
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+         #oxx{
+            display: inline-block;
+            vertical-align: top;
+             width: 350px;
+            height: 700px;
+            /* border: 2px solid rgb(133, 12, 225); */
+            margin-left: 2%;
+        }
+        #pii{
+            width: 345px;
+
+        }
+        #pitxx{
+            width: 345px;
+            height: 480px;
+            padding-left: 40px;
+            padding-right: 20px;
+             
+            padding-top: 20px;
+            background-color: white;
+        }
+         #pitxx p{
+            margin-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(161,169,170);
+        }
+        #pitxx h3{
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #oxxx{
+            display: inline-block;
+            vertical-align: top;
+             width: 350px;
+            height: 680px;
+            /* border: 2px solid rgb(133, 12, 225); */
+            margin-left: 20px;
+        }
+        #piii{
+            width: 345px;
+        }
+        #pitxxx{
+            width: 345px;
+            height: 450px;
+            padding-left: 40px;
+            padding-right: 20px;
+             
+            padding-top: 20px;
+            background-color: white;
+        }
+         #pitxxx p{
+            margin-top: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(161,169,170);
+        }
+        #pitxxx h3{
+            margin-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #yellopc{
+            width: 1260px;
+            height: 130px;
+            background-image: url(./images/front-page-counter.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 1px;
+            
+        }
+        #p{
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 50px;
+            margin-left: 140px ;
+
+        }
+        #pp{
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 250px;
+            margin-top:50px ;
+            
+        }#ppp{
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 250px;
+            margin-top:50px ;
+        }
+        #upic{
+            width: 1260px;
+            height: 390px;
+            /* border: 1px solid black;  */
+            background-color: rgb(216, 214, 214);
+            padding-top: 1px;
+        }#team{
+            color: rgba(6, 3, 3, 0.751);
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            margin-top: 40px;
+            margin-left: 590px;
+        }#teamd{
+            color: rgba(0, 0, 0, 0.55);
+            margin-left: 360px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        #per{
+            width: 1260px;
+            height: 380px;
+            /* border: 7px solid rgb(169, 5, 92); */
+            padding-top: 1px;
+        }
+        #i1d{
+            width: 120px;
+            height: 280px;
+            /* border: 1px solid black; */
+            margin-left: 40px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        #ig11{
+            width: 120px;
+            height: 120px;
+            /* border: 1px solid black; */
+            border-radius: 70px;
+            margin-top: 100px;
+            /* display: inline-block;
+            vertical-align: top; */
+        }
+        #inf{
+            display: inline-block;
+            vertical-align: top;
+            width: 220px;
+            height: 280px;
+            /* border: 1px solid black; */
+        }
+        #inf h2{
+            /* color: black; */
+            margin-top: 100px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #inf h5{
+            color: rgba(255, 68, 0, 0.632);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        #inf p{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        #i11d{
+            width: 120px;
+            height: 280px;
+            /* border: 1px solid black; */
+            margin-left: 40px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        #ig111{
+            width: 120px;
+            height: 120px;
+            /* border: 1px solid black; */
+            border-radius: 70px;
+            margin-top: 100px;
+            /* display: inline-block;
+            vertical-align: top; */
+        }
+        #inff{
+            display: inline-block;
+            vertical-align: top;
+            width: 220px;
+            height: 280px;
+            /* border: 1px solid black; */
+        }
+        #inff h2{
+            color: black;
+            margin-top: 100px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #inff h5{
+            color: rgba(255, 68, 0, 0.632);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        #inff p{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        #i111d{
+            width: 120px;
+            height: 280px;
+            /* border: 1px solid black; */
+            margin-left: 40px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        #ig1112{
+            width: 120px;
+            height: 120px;
+            /* border: 1px solid black; */
+            border-radius: 70px;
+            margin-top: 100px;
+            /* display: inline-block;
+            vertical-align: top; */
+        }
+        #inff2{
+            display: inline-block;
+            vertical-align: top;
+            width: 220px;
+            height: 280px;
+            /* border: 1px solid black; */
+        }
+        #inff2 h2{
+            color: black;
+            margin-top: 100px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #inff2 h5{
+            color: rgba(255, 68, 0, 0.632);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        #inff2 p{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        #abus{
+            width: 1260px;
+            height: 13  0px;
+            /* border: 1px solid rgb(96, 16, 215); */
+            padding-top:1px ;
+
+        }
+        #abus h1{
+            color: rgb(14, 160, 143);
+            margin-top: 70px;
+            margin-left: 520px;
+        }
+        #mist{width: 1260px;
+            height: 200px;
+            /* border: 9px solid rgb(155, 239, 30); */
+
+
+
+
+
+
+
+        }
+        #infro{
+            width: 80px;
+            height: 30px;
+            /* border: 1px solid black; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(241,210,4);
+            margin-left: 50px;
+            margin-top: 90px;
+              display: inline-block;
+            vertical-align: top;
+        }
+        #ln{
+
+              display: inline-block;
+             vertical-align: top; 
+            width: 1px;
+            height: 40px;
+            border: 1px solid rgb(127, 121, 121);
+            margin-left: 0px;
+            margin-top: 90px;
+        }
+        #mm{
+            display: inline-block;
+            vertical-align: top; 
+            margin-top: 90px;
+            width: 215px;
+            height: 50px;
+            /* border: 1px solid black; */
+            line-height: 25px;
+            color:rgb(172, 159, 159)
+
+
+        }#mn{
+            /* display: inline-block;
+            vertical-align: top; 
+            width: 100px;
+            height: 20px;
+            border: 1px solid black; */
+
+            display: inline-block;
+            vertical-align: top; 
+            margin-top: 90px;
+            width: 150px;
+            margin-left: 100px;
+            height: 30px;
+            /* border: 1px solid black; */
+            line-height: 25px;
+            color: rgb(241,210,4) ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            /* color:rgb(172, 159, 159) */
+        }
+        #mmp{   display: inline-block;
+             vertical-align: top; 
+            width: 1px;
+            height: 40px;
+            border: 1px solid rgb(127, 121, 121);
+            margin-left: 0px;
+            margin-top: 90px;
+        }
+        #mnp{
+            display: inline-block;
+            vertical-align: top; 
+            margin-top: 90px;
+            width: 215px;
+            height: 50px;
+            /* border: 1px solid black; */
+            line-height: 25px;
+            color:rgb(172, 159, 159)
+        }
+        #oo{ width: 1260px;
+            height: 450px;
+            /* border: 3px solid rgb(207, 33, 33); */
+
+        }
+        #yy{
+            width: 160px;
+            height: 30px;
+            /* border: 1px solid black; */
+            color: darkgray;
+            margin-top: 40px;
+            margin-left: 60px;
+            /* display: inline-block;
+            vertical-align: top; 
+             */
+        } 
+        #ll{
+            width: 300px;
+            /* color: bisque   ; */
+            background-color: rgb(238, 234, 229);
+            margin-left: 60px;
+            height: 30px;
+        }
+        #nn{
+            width: 160px;
+            height: 30px;
+            /* border: 1px solid black; */
+            color: darkgray;
+            margin-top: -30px;
+            margin-left:30px;
+            display: inline-block;
+            vertical-align: top; 
+            
+
+        }#km{
+            width: 300px;
+            /* color: bisque   ; */
+            background-color: rgb(238, 234, 229);
+            margin-left: -160px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: top; 
+        }
+        #xc{
+            width: 160px;
+            height: 30px;
+            /* border: 1px solid black; */
+            color: darkgray;
+            margin-top: -30px;
+            margin-left:30px;
+            display: inline-block;
+            vertical-align: top; 
+            }
+            #hj{
+                width: 300px;
+            /* color: bisque   ; */
+            background-color: rgb(238, 234, 229);
+            margin-left: -160px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: top; 
+                
+
+            }
+            #gf{
+                width: 160px;
+            height: 30px;
+            /* border: 1px solid black; */
+            color: darkgray;
+            margin-top: 30px;
+            margin-left:60px;
+
+            }
+            #mlm{ width: 970px;
+            /* color: bisque   ; */
+            background-color: rgb(238, 234, 229);
+            margin-left: 60px;
+                
+            height: 250px;
+            display: inline-block;
+            vertical-align: top; 
+
+            }
+            
+
+            
+
+            #opo{
+                width: 1260px;
+                height: 360px;
+                border: 1px solid magenta;
+                background-color: darkgrey;
+            pa
+              
+            }
+            #aq{
+                width: 250px;
+                height: 300px;
+                /* border: 1px solid black; */
+                margin-top: 40px;
+                margin-left: 120px;
+                display: inline-block;
+                vertical-align: top; 
+             }
+             #aq h1{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+             }#aq h3{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: 30px;
+
+             }
+             #aqw{
+                width: 250px;
+                height: 300px;
+                /* border: 1px solid black; */
+                margin-top: 40px;
+                margin-left: 120px;
+                display: inline-block;
+                vertical-align: top; 
+
+             }#aqw h1{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+             }
+             #aqw h3{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top: 30px;
+
+
+             }
+             #aqa{
+                width: 250px;
+                height: 300px;
+                /* border: 1px solid black; */
+                margin-top: 40px;
+                margin-left: 120px;
+                display: inline-block;
+                vertical-align: top; 
+
+
+             }
+             #aqa h1{            
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+             }#aqa h3{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             margin-top: 30px;
+
+             }
+             #lasr{
+                width: 1260px;
+                height: 40px;
+                /* border: 1px solid black ; */
+                text-align: center;
+                /* margin-top: 30px; */
+                background-color: rgb(0, 0, 0);
+             }
+             #lasrr{
+                width: 1260px;
+                height: 40px;
+                /* border: 1px solid black ; */
+                text-align: center;
+                /* margin-top: 30px; */
+                background-color: rgb(0, 0, 0);
+                color: brown;
+             }
+
+
+
+
+
+
+
+        
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <div id="navbar">
+                <div id="logo">
+                    <img src="./images/cropped-footer-logo-1.png " alt="">
+                </div>
+
+                <nav id="nav">
+                    <ul>
+                        <li>About</li>
+                        <li>Portfolio</li>
+                        <li>Testimonials</li>
+                        <li>Services</li>
+                        <li>Blog</li>
+                        <li>Our Team</li>
+                        <li>Contact Us</li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div id="heading">
+                <h1 id="heading1">Clean<span id="span-1">.</span>Slick.Pixel Perfect</h1>
+                <h4 id="head2">lldy is a great one-page theme, perfect for developers and designers but also for someone
+                    who just wants a
+                    new website for his business. Try it now!
+                    Learn more Download</h4>
+
+                <div>
+                    <button id="button">Learn more</button>
+                    <button id="button2">Download</button>
+                </div>
+            </div>
+        </header>
+        <div id="head3">About</div>
+        <div id="head4">It is an amazng one-page theme with great features that offers an incredible experience. It is
+            easy to install, make changes, adapt for your
+            business. A modern design with clean lines and styling for a wide variety of content, exactly how a business
+            design should be. You can add as many images as you want to the main header area and turn them into slider.
+        </div>
+
+
+        <div id="three-box">
+            <div id="tomato-box">
+                <div id="box-60">60%</div>
+                <div id="clip_path"></div>
+                <div id="Silver_line"></div>
+                <div id="tomato_line"></div>
+                <div id="tomato_dot"></div>
+
+                <i class="fa-solid fa-a" id="a-icon"></i>
+                <span>Typography </span>
+            </div>
+            <div id="banana-box">
+                <div id="box-80">80%</div>
+                <div id="clip_path2"></div>
+                <div id="Silver_line2"></div>
+                <div id="banana-line2"></div>
+                <div id="banana_dot"></div>
+                <i class="fa-solid fa-pencil" id="b-icon"></i>
+                <span>Desgin</span>
+            </div>
+            <div id="apple-box">
+                <div id="box-90">90%</div>
+                <div id="clip_path3"></div>
+                <div id="Silver_line3"></div>
+                <div id="apple-line"></div>
+                <div id="apple_dot"></div>
+                <i class="fa-solid fa-code" id="c-icon"></i>
+                <span>Development</span>
+            </div>
+        </div>
+        <div id="bakgrontex">
+            <div id="baktex">
+                <h1>Projects</h1>
+                <h4>You'll love our work. Check it out!</h4>
+            </div>
+        </div>
+        <div id="photos">
+            <img id="picc" src="./images/front-page-project-4.jpg" alt="">
+            <img id="pic2" src="./images/front-page-project-3.jpg" alt="">
+            <img id="pic3" src="./images/front-page-project-2.jpg" alt="">
+            <img id="pic4" src="images/front-page-project-1.jpg" alt="">
+        </div>
+        <div id="sliderp">
+            <div id="textt">
+                <h1>Testimonials </h1>
+            </div>
+            <img id="pi1" src="./images/front-page-team-3.jpg" alt="">
+            <div id="pera">
+                <p>
+                    What is a paragraph? Paragraphs are the building blocks of papers. Many students define paragraphs
+                    in terms of length: a paragraph is a group of at
+                    least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and
+                    coherence of ideas among sentences is what constitutes a paragraph.</p>
+            </div>
+            <div id="clip-path0"></div>
+            <div id="tx">Mike muller</div>
+        </div>
+        <div id="servis">
+            <div id="sevis">Services</div>
+            <div id="qq">In order to help you grow your business, our carefully selected experts can advise you in in
+                the following areas:</div>
+        </div>
+        <div id="tbox">
+            <div id="p1">
+                <i class="fa-solid fa-pencil" id="pen"></i>
+                <div id="pentx">Web Design</div>
+                <div id="penp">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...
+                </div>
+            </div>
+            <div id="p2">
+                <i class="fa-solid fa-code" id="dev"></i>
+                <div id="devtx">Development</div>
+                <div id="devp">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...
+                </div>
+            </div>
+            <div id="p3">
+                <i class="fa-solid fa-magnifying-glass" id="mag"></i>
+                <div id="magx">SEO Analysis</div>
+                <div id="magp">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...
+                </div>
+            </div>
+        </div>
+        <div id="bluebak">
+            <div id="hed">Latest News</div>
+            <div id="line">If you are interested in the latest articles in the industry, take a sneak peek at our blog.
+                You have nothing to loose!</div>
+            <button id="btn">See blog</button>
+            <div id="blogs">
+                <div id="ox">
+                    <img id="pi" src="./images/photo-1449168013943-3a15804bb41c-360x213.jpg" alt="">
+                    <div id="pitx">
+                        <h2>
+                            We Have Made Illdy Theme SEO Friendly
+                        </h2>
+                        <p>Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the
+                            highest rankings…</p>
+                        <h3>Read more</h3>    
+
+                        </div>
+                </div>
+                <div id="oxx">
+                    <img id="pii" src="./images/photo-1450101215322-bf5cd27642fc-360x213.jpg" alt="">
+                    <div id="pitxx">
+                        <h2>
+                            Stunning One Page WordPress Theme For Masses</h2>
+                        <p>This theme is not just free, it is free for private and commercial use since it is licensed under GPL…</p>
+                        <h3>Read more</h3>    
+
+                        </div>
+                </div>
+                <div id="oxxx">
+                    <img id="piii" src="./images/photo-1447687643809-e05fd462f350-360x213.jpg" alt="">
+                    <div id="pitxxx">
+                        <h2>
+                             Hello world! 
+                        </h2> 
+                        <p>This theme is not just free, it is free for private and commercial use since it is licensed under GPL…</p>
+                        <h3>Read more</h3>    
+
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div id="yellopc">
+            <div id="p">
+                <h1>
+                    PROJECTS
+                </h1>
+            </div>
+            <div id="pp">
+                <h1>
+                    CLIENTS
+                </h1>
+             </div>
+             <div id="ppp">
+                <h1>COFFES</h1>
+             </div>
+         </div>
+        <div id="upic">
+            <div id="team">TEAM</div>
+            <div id="teamd">Meet the people that are going to take your business to the next level.</div>
+            <div id="per">
+                <div id="i1d">
+                    <img id="ig11" src="./images/front-page-team-3.jpg" alt="">
+                </div>
+                <div id="inf">
+                    <h2>
+                        Mark Lawrance
+                    </h2>
+                    <h5>
+                        Web Designer
+                    </h5>
+                    <p>
+                        Creative, detail-oriented, always focused.
+                    </p>
+                </div>
+                <div id="i11d">
+                    <img id="ig111" src="./images/front-page-team-2.jpg" alt="">
+                </div>
+                <div id="inff">
+                    <h2>
+                        Jane Stenton
+                    </h2>
+                    <h5>
+                        SEO Specialist
+                    </h5>
+                    <p>
+                        Curious, tech-geeck and gets serious when it comes to work.
+                    </p>
+                </div>
+                <div id="i111d">
+                    <img id="ig1112" src="./images/front-page-team-1.jpg" alt="">
+                </div>
+                <div id="inff2">
+                    <h2>
+                        Jane Stenton
+                    </h2>
+                    <h5>
+                        SEO Specialist
+                    </h5>
+                    <p>
+                        Curious, tech-geeck and gets serious when it comes to work.
+                    </p>
+                </div>
+                <div id="abus">
+                
+                    <h1>
+                        CONTACT US
+                    </h1>
+                </div>
+                   <div id="mist">
+                    <div id="infro">ADDRESS</div>
+                    <div id="ln"></div>
+                    <div id="mm">Street 221B Baker Street, London, UK</div>
+                    <div id="mn">Customer Support</div>
+                    <div id="mmp"></div>
+                    <div id="mnp">E-mail: contact@site.com
+                        Phone: (555) 555-5555</div>
+                </div>
+                <div id="oo">
+                        <div id="yy">Your Name (required)</div>
+                        <input type="text" name="" id="ll">
+                        <div id="nn">Your Email (required)</div>
+                        <input type="text" name="" id="km">
+                        <div id="xc">Subject</div>
+                        <input type="text" name="" id="hj">
+                        <div id="gf"> Message</div>
+                        <!-- <input type="text" name="" id="mlm"> -->
+                         <textarea name="" id="mlm"></textarea>
+                        
+                </div>
+                <div id="opo" >
+                    <div id="aq">
+                        <h1>PRODUCTS</h1>
+                        <h3>Our work</h3>
+                        <h3>Club</h3>
+                        <h3>NEWS</h3>
+                        <H3>ANNOUNCMENT</H3>
+                    </div>
+                    <div id="aqw">
+                        <h1>INFORMATION</h1>
+                        <h3>Pricing</h3>
+                        <h3> Terms</h3>
+                        <h3>Affiliates</h3>
+                        <H3>Blog</H3>
+                    </div>
+                    <div id="aqa">
+                        <h1>
+                            Documentation</h1>
+                        <h3>FAQs</h3>
+                        <h3> Forums</h3>
+                        <h3>Contact</h3>
+                        <H3>Blog</H3>
+                    </div>
+
+                </div>
+                <div id="lasr"></div>
+                <div id="lasrr">Theme: Illdy. © Copyright 2017. All Rights Reserved.</div>
+
+                
+
+                
+                
+                
+
+
+
+            </div>
+        </div> 
+        
+        
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+
+</html>
