@@ -15,313 +15,294 @@
             box-sizing: border-box;
         }
 
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         #header {
             width: 100%;
-            height: 168vh;
-            /* border: 2px solid green; */
+            height: 100vh;
             background-image: url(./images/front-page-header.jpg);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-        }
-
-        #navbar {
-
-            height: 100px;
-            /* border: 1px solid black; */
-
-
-
-        }
-
-        #logo {
-            margin-top: 18px;
-            margin-left: 60px;
-            /* border: 1px solid black; */
-            width: 180px;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        #nav {
-            width: 800px;
-            height: 100px;
-            /* border: 2px solid red; */
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 214px;
-        }
-
-        #nav ul {
-            list-style-type: none;
-        }
-
-        #nav ul li {
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 20px;
-            padding-left: 30px;
-            margin-top: 50px;
             color: white;
-        }
-
-        #heading {
-            height: 300px;
-            /* border: 1px solid black; */
-            margin-top: 120px;
-            padding-top: 10px;
-        }
-
-        #heading1 {
-            margin-top: 120px;
-            margin-left: 150px;
-            font-size: 90px;
-            color: white;
-        }
-
-        #head2 {
+            position: relative;
             text-align: center;
-            width: 800px;
-            /* border: 1px solid black;  */
-            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            width: 180px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .nav ul li {
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li:hover {
+            color: yellow;
+        }
+
+        .heading {
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        .heading1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: yellow;
+        }
+
+        .subheading {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
             color: white;
         }
 
-        #button {
-            width: 240px;
-            height: 60px;
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 375px;
-            margin-top: 85px;
-            font-size: medium;
+        .buttons {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            width: 220px;
+            height: 55px;
+            font-size: 16px;
             font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.021);
-            border: 2px white solid;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-learn {
+            background: transparent;
+            border: 2px solid white;
             color: white;
         }
 
-        #button:hover {
-            background-color: rgba(0, 0, 0, 0.128);
+        .btn-learn:hover {
+            background: rgba(255, 255, 255, 0.2);
         }
 
-        #button2 {
-            width: 240px;
-            height: 60px;
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 20px;
-            margin-top: 85px;
+        .btn-download {
             background-color: rgba(255, 255, 0, 0.888);
             border: none;
-            color: white;
-            font-weight: bold;
-            font-size: medium;
+            color: black;
         }
 
-        #button2:hover {
+        .btn-download:hover {
             background-color: rgb(90, 51, 127);
-
-
+            color: white;
         }
 
-        #span-1 {
-            color: rgb(241, 210, 4);
+        /* Responsive */
+        @media (max-width: 768px) {
+            .heading1 {
+                font-size: 40px;
+            }
+
+            .subheading {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+
+            .nav ul {
+                justify-content: center;
+                gap: 15px;
+                padding-top: 10px;
+            }
+
+            .navbar {
+                padding: 20px;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                width: 180px;
+                height: 50px;
+                font-size: 15px;
+            }
         }
 
-        #head3 {
+
+        .section-title {
             font-size: 40px;
-            font-weight: bolder;
-            /* border: 1px solid black; */
-            width: 130px;
-            height: 40px;
+            font-weight: bold;
+            text-align: center;
             margin-top: 80px;
-            margin-left: 560px;
         }
 
-        #head4 {
-            /* border: 1px solid black; */
-            width: 900px;
-            height: 50px;
+        .section-description {
+            max-width: 900px;
             text-align: center;
-            margin-left: 190px;
-            margin-top: 20px;
+            margin: 20px auto;
+            font-size: 16px;
+            line-height: 1.6;
         }
 
-        #three-box {
+        .three-boxes {
             width: 90%;
-            height: 200px;
-            /* border: 2px solid red; */
-            /* margin:100px auto ; */
-            margin: auto;
-            margin-top: 100px;
+            max-width: 1200px;
+            margin: 100px auto 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        #tomato-box {
-            width: 31%;
-            height: 50%;
-            /* border: 2px solid tomato;   */
-            display: inline-block;
-            vertical-align: top;
+        .box {
+            flex: 1;
+            min-width: 280px;
+            max-width: 32%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
         }
 
-        #box-60 {
+        .percentage {
             width: 60px;
             height: 25px;
-            background-color: tomato;
-            border-radius: 3px;
             color: white;
+            border-radius: 3px;
             text-align: center;
+            line-height: 25px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: 60%;
-
+            margin-bottom: 3px;
         }
 
-        #clip_path {
+        .clip-path {
             width: 10px;
             height: 10px;
-            background-color: tomato;
             clip-path: polygon(100% 0, 0 0, 53% 69%);
-            margin-left: 66%;
-            margin-top: 1px;
+            margin-bottom: 10px;
         }
 
-        #Silver_line {
+        .line {
             width: 100%;
-            margin-top: 5px;
             border-bottom: 3px solid silver;
+            margin: 5px 0;
         }
 
-        #tomato_line {
-            width: 65%;
-            border-bottom: 3px solid tomato;
+        .line-colored {
+            height: 3px;
             margin-top: -3px;
+            align-self: flex-start;
         }
 
-        #tomato_dot {
+        .dot {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: tomato;
-            margin-left: 65%;
             margin-top: -5px;
+            align-self: flex-end;
         }
 
-        #a-icon {
+        /* Icon styling */
+        .icon {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        /* Tomato Theme */
+        .tomato .percentage,
+        .tomato .clip-path,
+        .tomato .line-colored,
+        .tomato .dot,
+        .tomato .icon {
+            background-color: tomato;
             color: tomato;
-            /* font-size: 30px; */
-            margin-top: 20px;
         }
 
-        #banana-box {
-            width: 31%;
-            height: 50%;
-            /* border: 2px solid rgba(255, 0, 255, 0.644); */
-            display: inline-block;
-            vertical-align: top;
+        .tomato .line-colored {
+            width: 65%;
         }
 
-        #box-80 {
-            width: 60px;
-            height: 25px;
+        .tomato .dot {
+            margin-left: 65%;
+        }
+
+        /* Banana Theme */
+        .banana .percentage,
+        .banana .clip-path,
+        .banana .line-colored,
+        .banana .dot,
+        .banana .icon {
             background-color: rgba(255, 0, 255, 0.644);
-            border-radius: 3px;
-            color: white;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: 60%;
-        }
-
-        #clip_path2 {
-            width: 10px;
-            height: 10px;
-            background-color: rgba(255, 0, 255, 0.644);
-            clip-path: polygon(100% 0, 0 0, 53% 69%);
-            margin-left: 66%;
-            margin-top: 1px;
-        }
-
-        #Silver_line2 {
-            width: 100%;
-            margin-top: 5px;
-            border-bottom: 3px solid silver;
-        }
-
-        #banana-line2 {
-            width: 67%;
-            border-bottom: 3px solid rgba(255, 0, 255, 0.644);
-            margin-top: -3px;
-        }
-
-        #banana_dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: rgba(255, 0, 255, 0.644);
-            margin-left: 66%;
-            margin-top: -5px;
-        }
-
-        #b-icon {
             color: rgba(255, 0, 255, 0.644);
-            /* font-size: 30px; */
-            margin-top: 20px;
         }
 
-        #apple-box {
-            width: 31%;
-            height: 50%;
-            /* border: 2px solid maroon; */
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        #box-90 {
-            width: 60px;
-            height: 25px;
-            background-color: maroon;
-            border-radius: 3px;
-            color: white;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: 60%;
-        }
-
-        #clip_path3 {
-            width: 10px;
-            height: 10px;
-            background-color: maroon;
-            clip-path: polygon(100% 0, 0 0, 53% 69%);
-            margin-left: 66%;
-            margin-top: 1px;
-        }
-
-        #Silver_line3 {
-            width: 100%;
-            margin-top: 5px;
-            border-bottom: 3px solid silver;
-        }
-
-        #apple-line {
+        .banana .line-colored {
             width: 67%;
-            border-bottom: 3px solid maroon;
-            margin-top: -3px;
         }
 
-        #apple_dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
+        .banana .dot {
+            margin-left: 67%;
+        }
+
+        /* Apple Theme */
+        .apple .percentage,
+        .apple .clip-path,
+        .apple .line-colored,
+        .apple .dot,
+        .apple .icon {
             background-color: maroon;
-            margin-left: 66%;
-            margin-top: -5px;
+            color: maroon;
         }
 
-        #c-icon {
-            color: maroon;
-            /* font-size: 30px; */
-            margin-top: 20px;
+        .apple .line-colored {
+            width: 67%;
         }
+
+        .apple .dot {
+            margin-left: 67%;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .three-boxes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                max-width: 100%;
+            }
+        }
+
 
         #bakgrontex {
             width: 1260px;
@@ -1165,8 +1146,6 @@
             height: 30px;
             display: inline-block;
             vertical-align: top;
-
-
         }
 
         #gf {
@@ -1294,12 +1273,12 @@
 <body>
     <main>
         <header id="header">
-            <div id="navbar">
-                <div id="logo">
-                    <img src="./images/cropped-footer-logo-1.png " alt="">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/cropped-footer-logo-1.png" alt="Logo">
                 </div>
 
-                <nav id="nav">
+                <nav class="nav">
                     <ul>
                         <li>About</li>
                         <li>Portfolio</li>
@@ -1309,60 +1288,64 @@
                         <li>Our Team</li>
                         <li>Contact Us</li>
                     </ul>
-
                 </nav>
             </div>
-            <div id="heading">
-                <h1 id="heading1">Clean<span id="span-1">.</span>Slick.Pixel Perfect</h1>
-                <h4 id="head2">lldy is a great one-page theme, perfect for developers and designers but also for someone
-                    who just wants a
-                    new website for his business. Try it now!
-                    Learn more Download</h4>
 
-                <div>
-                    <button id="button">Learn more</button>
-                    <button id="button2">Download</button>
+            <div class="heading">
+                <h1 class="heading1">Clean<span class="highlight">.</span>Slick.Pixel Perfect</h1>
+                <h4 class="subheading">
+                    lldy is a great one-page theme, perfect for developers and designers but also for someone who just
+                    wants a
+                    new website for his business. Try it now!
+                </h4>
+
+                <div class="buttons">
+                    <button class="btn btn-learn">Learn more</button>
+                    <button class="btn btn-download">Download</button>
                 </div>
             </div>
         </header>
-        <div id="head3">About</div>
-        <div id="head4">It is an amazng one-page theme with great features that offers an incredible experience. It is
-            easy to install, make changes, adapt for your
-            business. A modern design with clean lines and styling for a wide variety of content, exactly how a business
-            design should be. You can add as many images as you want to the main header area and turn them into slider.
+
+        <div class="section-title">About</div>
+        <div class="section-description">
+            It is an amazing one-page theme with great features that offers an incredible experience. It is
+            easy to install, make changes, adapt for your business. A modern design with clean lines and styling
+            for a wide variety of content, exactly how a business design should be. You can add as many images
+            as you want to the main header area and turn them into slider.
         </div>
 
-
-        <div id="three-box">
-            <div id="tomato-box">
-                <div id="box-60">60%</div>
-                <div id="clip_path"></div>
-                <div id="Silver_line"></div>
-                <div id="tomato_line"></div>
-                <div id="tomato_dot"></div>
-
-                <i class="fa-solid fa-a" id="a-icon"></i>
-                <span>Typography </span>
+        <div class="three-boxes">
+            <div class="box tomato">
+                <div class="percentage">60%</div>
+                <div class="clip-path"></div>
+                <div class="line silver"></div>
+                <div class="line-colored"></div>
+                <div class="dot"></div>
+                <i class="fa-solid fa-a icon"></i>
+                <span>Typography</span>
             </div>
-            <div id="banana-box">
-                <div id="box-80">80%</div>
-                <div id="clip_path2"></div>
-                <div id="Silver_line2"></div>
-                <div id="banana-line2"></div>
-                <div id="banana_dot"></div>
-                <i class="fa-solid fa-pencil" id="b-icon"></i>
-                <span>Desgin</span>
+
+            <div class="box banana">
+                <div class="percentage">80%</div>
+                <div class="clip-path"></div>
+                <div class="line silver"></div>
+                <div class="line-colored"></div>
+                <div class="dot"></div>
+                <i class="fa-solid fa-pencil icon"></i>
+                <span>Design</span>
             </div>
-            <div id="apple-box">
-                <div id="box-90">90%</div>
-                <div id="clip_path3"></div>
-                <div id="Silver_line3"></div>
-                <div id="apple-line"></div>
-                <div id="apple_dot"></div>
-                <i class="fa-solid fa-code" id="c-icon"></i>
+
+            <div class="box apple">
+                <div class="percentage">90%</div>
+                <div class="clip-path"></div>
+                <div class="line silver"></div>
+                <div class="line-colored"></div>
+                <div class="dot"></div>
+                <i class="fa-solid fa-code icon"></i>
                 <span>Development</span>
             </div>
         </div>
+
         <div id="bakgrontex">
             <div id="baktex">
                 <h1>Projects</h1>
